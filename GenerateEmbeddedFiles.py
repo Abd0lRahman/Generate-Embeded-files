@@ -10,7 +10,7 @@ ImplemintationFile = open(f"{FilePath}/{ModuleName}.c","w")
 PrivateFile.write(f'#ifndef {ModuleName.upper()}_PRIVATE_H_\n#define {ModuleName.upper()}_PRIVATE_H_\n\n\n\n#endif')
 ConfigFile.write(f'#ifndef {ModuleName.upper()}_CONFIG_H_\n#define {ModuleName.upper()}_CONFIG_H_\n\n\n\n#endif')
 RegisterFile.write(f'#ifndef {ModuleName.upper()}_REGISTER_H_\n#define {ModuleName.upper()}_REGISTER_H_\n\n\n\n#endif')
-ImplemintationFile.write(f'''#include "{ModuleName}_interface.h"\n#include "{ModuleName}_config.h"\n#include "{ModuleName}_private.h"\n#include "{ModuleName}_register.h"\n''')
+ImplemintationFile.write(f'''#include "{ModuleName}_interface.h"\n#include "{ModuleName}_register.h"\n#include "{ModuleName}_private.h"\n#include "{ModuleName}_config.h"\n''')
 InterfaceFile.write(f'#ifndef {ModuleName.upper()}_INTERFACE_H_\n#define {ModuleName.upper()}_INTERFACE_H_\n\n\n\n#endif')
 
 PrivateFile.close()
